@@ -1,0 +1,20 @@
+2014/10/26 22:14:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'modulo_convocatoria.formulario' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `formulario`.
+in C:\xampp\htdocs\yii\proyecto\index.php (13)
+2014/10/27 03:40:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "formulario".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('formulario')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('formulario')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/formu...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\yii\proyecto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii/proyecto/index.php?r=gii/model/formulario
+---
+2014/10/27 03:41:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "cronograma".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cronograma')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\proyecto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/proyecto/index.php?r=cronograma
+---
